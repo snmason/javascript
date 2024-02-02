@@ -76,7 +76,7 @@ const wordBlank = word => {
     return "_".repeat(word.length);
 }
 
-const guessValidate = guess => guess.length === 1 && guess.match(/[a-z]/i) ? replaceLetter(guess) : 'Your guess should be a single letter.';
+const guessValidate = guess => guess.length === 1 && guess.match(/[a-z]/i) ? replaceLetter(guess) : console.log('Your guess should be a single letter.');
 
 
 const replaceLetter = (guess) => {
